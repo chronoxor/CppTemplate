@@ -8,7 +8,7 @@
 
 namespace CppTemplate {
 
-inline int Template::StaticMethod(int parameter) const noexcept
+inline int Template::StaticMethod(int parameter) noexcept
 {
     return parameter;
 }

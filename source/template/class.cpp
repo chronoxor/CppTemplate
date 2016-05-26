@@ -6,7 +6,7 @@
     \copyright MIT License
 */
 
-#include "class.h"
+#include "template/class.h"
 
 #include <cstdlib>
 

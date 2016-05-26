@@ -12,7 +12,6 @@
 
 int main(int argc, char** argv)
 {
-    std::cout << "CppTemplate::function(0) = " << CppTemplate::function(0) << std::endl;
     std::cout << "CppTemplate::function(10) = " << CppTemplate::function(10) << std::endl;
     std::cout << "CppTemplate::function(100) = " << CppTemplate::function(100) << std::endl;
     std::cout << "CppTemplate::function(1000) = " << CppTemplate::function(1000) << std::endl;

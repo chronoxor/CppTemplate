@@ -12,9 +12,10 @@
 
 int main(int argc, char** argv)
 {
-    CppTemplate::Template template(10);
-    std::cout << "template.field() = " << template.field() << std::endl;
-    std::cout << "template.Method(100) = " << template.Method(100) << std::endl;
+    CppTemplate::Template instance(10);
+
+    std::cout << "instance.field() = " << instance.field() << std::endl;
+    std::cout << "instance.Method(100) = " << instance.Method(100) << std::endl;
     std::cout << "CppTemplate::Template::StaticMethod(1000) = " << CppTemplate::Template::StaticMethod(1000) << std::endl;
     return 0;
 }

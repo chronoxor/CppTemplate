@@ -47,7 +47,7 @@ public:
         \param parameter - Static method parameter
         \return Static method result
     */
-    static int StaticMethod(int parameter) const noexcept;
+    static int StaticMethod(int parameter) noexcept;
 
 private:
     int _field;
