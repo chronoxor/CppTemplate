@@ -6,9 +6,11 @@
 
 #include "template/class.h"
 
+using namespace CppTemplate;
+
 BENCHMARK("Template class", 10000000)
 {
-    CppTemplate::Template instance(10);
+    Template instance(10);
 
     instance.Method(100);
     instance.StaticMethod(1000);
