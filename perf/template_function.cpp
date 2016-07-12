@@ -10,7 +10,7 @@ using namespace CppTemplate;
 
 const uint64_t iterations = 10000000;
 
-BENCHMARK("Template function")
+BENCHMARK("function")
 {
     uint64_t crc = 0;
 

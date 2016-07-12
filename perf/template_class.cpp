@@ -8,7 +8,7 @@
 
 using namespace CppTemplate;
 
-BENCHMARK("Template class", 10000000)
+BENCHMARK("Template", 10000000)
 {
     Template instance(10);
 
