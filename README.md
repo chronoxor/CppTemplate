@@ -33,12 +33,13 @@ C++ Template Library contains initial templates for a new C++ library project.
 ## Clone repository with submodules
 ```
 git clone git@github.com:chronoxor/CppTemplate.git
+cd CppTemplate
 git submodule update --init --recursive
 ```
 
 ## Windows (Visaul Studio 2015)
 ```
-cd CppTemplate\scripts
+cd scripts
 01-generate-VisualStudio-x64.bat
 02-build-VisualStudio.bat
 03-tests.bat
@@ -49,7 +50,7 @@ If you want 32-bit version use '01-generate-VisualStudio-x32.bat' to generate pr
 
 ## Windows (MinGW with MSYS)
 ```
-cd CppTemplate\scripts
+cd scripts
 01-generate-MSYS.bat
 02-build-MSYS.bat
 03-tests.bat
@@ -59,7 +60,7 @@ cd CppTemplate\scripts
 
 ## Linux
 ```
-cd CppTemplate\scripts
+cd scripts
 01-generate-Unix.sh
 02-build-Unix.sh
 03-tests.sh
