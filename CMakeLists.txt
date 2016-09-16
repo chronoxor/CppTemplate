@@ -33,6 +33,9 @@ include_directories("include")
 include_directories("modules/catch/single_include")
 include_directories("modules/CppBenchmark/include")
 
+# Modules
+add_subdirectory("modules")
+
 # Library
 file(GLOB_RECURSE SOURCE_FILES "source/*.cpp")
 add_library(cpptemplate ${SOURCE_FILES})
