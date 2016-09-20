@@ -9,9 +9,12 @@ dist: trusty
 compiler:
 - gcc
 
-before_install:
-- sudo apt-get install cmake
-- sudo apt-get install doxygen graphviz
+addons:
+  apt:
+    packages:
+    - cmake
+    - doxygen
+    - graphviz
 
 script: 
 - cd scripts
