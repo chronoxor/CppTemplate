@@ -11,12 +11,16 @@ compiler:
 
 before_install:
 - sudo apt-get install cmake
+- sudo apt-get install doxygen graphviz
 
 script: 
 - cd scripts
 - ./01-generate-Unix.sh
 - ./02-build-Unix.sh
 - ./03-tests.sh
+- ./04-install-Unix.sh
+- ./05-doxygen-Unix.sh
+- ./06-clean.sh
 
 branches:
   only:
