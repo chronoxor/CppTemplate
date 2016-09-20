@@ -34,7 +34,7 @@ C++ Template Library contains initial templates for a new C++ library project.
 ```
 git clone git@github.com:chronoxor/CppTemplate.git
 cd CppTemplate
-git submodule update --init --recursive
+git submodule update --init --recursive --remote
 ```
 
 ## Windows (Visaul Studio 2015)
