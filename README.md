@@ -1,4 +1,4 @@
-# CppTemplate
+# CppTemplate [![Build Status (Master)](https://travis-ci.org/chronoxor/CppTemplate.svg?branch=master)](https://travis-ci.org/chronoxor/CppTemplate)
 C++ Template Library contains initial templates for a new C++ library project.
 
 [CppTemplate API reference](http://chronoxor.github.io/CppTemplate/index.html)
