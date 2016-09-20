@@ -3,6 +3,9 @@ language: cpp
 os:
 - linux
 
+sudo: required
+dist: trusty
+
 compiler:
 - gcc
 - clang
