@@ -17,5 +17,5 @@ TEST_CASE("Template class", "[CppTemplate]")
     for (int i = 0; i < 1000; ++i)
         REQUIRE(instance.Method(1000) < 1000);
 
-    REQUIRE(Template::StaticMethod(1000) != 1000);
+    REQUIRE(Template::StaticMethod(1000) == 1000);
 }
