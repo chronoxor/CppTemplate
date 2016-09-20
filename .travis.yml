@@ -4,7 +4,6 @@ language: cpp
 # Operation systems
 os:
   - linux
-  - osx
 
 # Branches to build
 branches:
@@ -26,9 +25,6 @@ addons:
       - cmake
       - doxygen
       - graphviz
-
-# OS X Version
-osx_image: xcode8
 
 # Scripts that run before install
 before_install:
