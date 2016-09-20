@@ -1,9 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 project(cpptemplate)
 
-# Modules
-add_subdirectory("modules")
-
 # Doxygen
 find_package(Doxygen)
 if(DOXYGEN_FOUND)
