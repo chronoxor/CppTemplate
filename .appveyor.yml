@@ -9,42 +9,50 @@ branches:
 # Clone depth
 clone_depth: 5
 
-# Clone repository as zip archive
-shallow_clone: true
-
 # Including commits with 'build' comment
 only_commits:
   message: build
 
-# Build platform, i.e. Win32 (instead of x86), x64, Any CPU. This setting is optional.
-platform: 
-  - x86
-  - x64
+# Build matrix
+environment:
+  matrix:
+    - build: VisualStudio
+      ext: bat
+      command: cmd 
+      prefix:
+    - build: Cygwin
+      ext: sh
+      command: C:\cygwin\bin\bash -lc
+      prefix: cd $APPVEYOR_BUILD_FOLDER/scripts; exec 0</dev/null;
+
+# Allow to fail on first error in matrix
+matrix:
+  fast_finish: true
 
 # Scripts that are called at very beginning, before repo cloning
 init:
-  - cmd: cmake --version
-  - cmd: msbuild /version
+  - if "%build%"=="VisualStudio" msbuild /version
+  - if "%build%"=="Cygwin" %command% "cygcheck -dc cygwin"
+  - '%command% "cmake --version"'
+  - '%command% "git config --global user.name "AppVeyor"'
+  - '%command% "git config --global user.email "team@appveyor.com"'
+  - '%command% "git config --global push.default simple'
 
 # Scripts that run after cloning repository
 install:
-  - choco install doxygen.portable
-  - choco install graphviz.portable
-  - cmd: git config --global user.name "AppVeyor"
-  - cmd: git config --global user.email "team@appveyor.com"
-  - cmd: git config --global push.default simple
-  - cmd: git submodule update --init --recursive --remote
+  - if "%build%"=="VisualStudio" choco install doxygen.portable
+  - if "%build%"=="VisualStudio" choco install graphviz.portable
+  - git submodule update --init --recursive --remote
 
 # Build scripts
 build_script:
-  - cmd: cd scripts
-  - cmd: if "%platform%"=="x86" 01-generate-VisualStudio-x32.bat
-  - cmd: if "%platform%"=="x64" 01-generate-VisualStudio-x64.bat
-  - cmd: 02-build-VisualStudio.bat
-  - cmd: 03-tests.bat
-  - cmd: 04-install-VisualStudio.bat
-  - cmd: 05-doxygen-VisualStudio.bat
-  - cmd: 06-clean.bat
+  - cd scripts
+  - '%command% "%prefix% ./01-generate-%build%.%ext%"'
+  - '%command% "%prefix% ./02-build-%build%.%ext%"'
+  - '%command% "%prefix% ./03-tests.%ext%"'
+  - '%command% "%prefix% ./04-install-%build%.%ext%"'
+  - '%command% "%prefix% ./05-doxygen-%build%.%ext%"'
+  - '%command% "%prefix% ./06-clean.%ext%"'
 
 # Test scripts
 test: off
