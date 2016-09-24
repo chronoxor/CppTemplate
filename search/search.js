@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   0: "cfmostv~",
   1: "t",
   2: "c",
-  3: "cftv",
+  3: "cfv",
   4: "fmost~",
   5: "v",
   6: "c"
