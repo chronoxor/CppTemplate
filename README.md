@@ -37,7 +37,7 @@ Optional:
 
 ## Clone repository with submodules
 ```
-git clone git@github.com:chronoxor/CppTemplate.git
+git clone https://github.com/chronoxor/CppTemplate.git CppTemplate
 cd CppTemplate
 git submodule update --init --recursive --remote
 ```
