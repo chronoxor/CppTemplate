@@ -23,13 +23,13 @@ C++ Template Library contains initial templates for a new C++ library project.
 # Requirements
 * Windows 7 / Windows 10
 * Linux
-* [CMake](http://www.cmake.org/download/)
-* [GIT](https://git-scm.com/)
-* [GCC](https://gcc.gnu.org/)
+* [CMake](http://www.cmake.org)
+* [GIT](https://git-scm.com)
+* [GCC](https://gcc.gnu.org)
 
 Optional:
-* [Visual Studio 2015](https://www.visualstudio.com/)
-* [Clion](https://www.jetbrains.com/clion/)
+* [Visual Studio 2015](https://www.visualstudio.com)
+* [Clion](https://www.jetbrains.com/clion)
 * [MinGW](http://mingw-w64.org/doku.php)
 * [MSYS](http://www.mingw.org/wiki/msys)
 
