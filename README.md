@@ -12,27 +12,35 @@ C++ Template Library contains initial templates for a new C++ library project.
   * [Requirements](#requirements)
   * [How to build?](#how-to-build)
     * [Clone repository with submodules](#clone-repository-with-submodules)
-    * [Windows (Visaul Studio 2015)](#windows-visaul-studio-2015)
-    * [Windows (MinGW with MSYS)](#windows-mingw-with-msys)
     * [Linux](#linux)
+    * [OSX](#osx)
+    * [Windows (Cygwin)](#windows-cygwin)
+    * [Windows (MinGW)](#windows-mingw)
+    * [Windows (MinGW with MSYS)](#windows-mingw-with-msys)
+    * [Windows (Visaul Studio 2015)](#windows-visaul-studio-2015)
 
 # Features
-* Memory management
-* Networking
-* Threading
+* Cross platform
+* Benchmarks
+* Examples
+* Tests
+* (Doxygen)[http://www.doxygen.org] API documentation
+* Continuous integration ((Travis CI)[https://travis-ci.com], (AppVeyor)[https://www.appveyor.com])
 
 # Requirements
-* Windows 7 / Windows 10
 * Linux
+* OSX
+* Windows 7 / Windows 10
 * [CMake](http://www.cmake.org)
 * [GIT](https://git-scm.com)
 * [GCC](https://gcc.gnu.org)
 
 Optional:
-* [Visual Studio 2015](https://www.visualstudio.com)
+* [Clang](http://clang.llvm.org)
 * [Clion](https://www.jetbrains.com/clion)
 * [MinGW](http://mingw-w64.org/doku.php)
 * [MSYS](http://www.mingw.org/wiki/msys)
+* [Visual Studio 2015](https://www.visualstudio.com)
 
 #How to build?
 
@@ -43,32 +51,38 @@ cd CppTemplate
 git submodule update --init --recursive --remote
 ```
 
-## Windows (Visaul Studio 2015)
+## Linux
 ```
-cd scripts
-01-generate-VisualStudio.bat
-02-build-VisualStudio.bat
-03-tests.bat
-04-install-VisualStudio.bat
-05-doxygen-VisualStudio.bat
+cd build
+unix.sh
+```
+
+## OSX
+```
+cd build
+unix.sh
+```
+
+## Windows (Cygwin)
+```
+cd build
+cygwin.bat
+```
+
+## Windows (MinGW)
+```
+cd build
+mingw.bat
 ```
 
 ## Windows (MinGW with MSYS)
 ```
-cd scripts
-01-generate-MSYS.bat
-02-build-MSYS.bat
-03-tests.bat
-04-install-MSYS.bat
-05-doxygen-MSYS.bat
+cd build
+msys.bat
 ```
 
-## Linux
+## Windows (Visaul Studio 2015)
 ```
-cd scripts
-./01-generate-Unix.sh
-./02-build-Unix.sh
-./03-tests.sh
-./04-install-Unix.sh
-./05-doxygen-Unix.sh
+cd build
+vs.bat
 ```
