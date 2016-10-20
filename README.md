@@ -42,7 +42,6 @@ Optional:
 * [Clang](http://clang.llvm.org)
 * [Clion](https://www.jetbrains.com/clion)
 * [MinGW](http://mingw-w64.org/doku.php)
-* [MSYS](http://www.mingw.org/wiki/msys)
 * [Visual Studio 2015](https://www.visualstudio.com)
 
 #How to build?
@@ -76,12 +75,6 @@ cygwin.bat
 ```
 cd build
 mingw.bat
-```
-
-## Windows (MinGW with MSYS)
-```
-cd build
-msys.bat
 ```
 
 ## Windows (Visaul Studio 2015)
