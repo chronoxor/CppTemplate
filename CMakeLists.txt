@@ -25,24 +25,24 @@ include(SetCompilerFeatures)
 include(SetCompilerWarnings)
 include(SetPlatformFeatures)
 
-# External packages
-find_package(Threads REQUIRED)
-
 # Modules
 add_subdirectory("modules")
 
-# System link libraries
-list(APPEND SYSLIBS Threads::Threads)
+# External packages
+find_package(Threads REQUIRED)
+
+# Link libraries
+list(APPEND LINKLIBS Threads::Threads)
 
 # Library
 file(GLOB_RECURSE SOURCE_FILES "source/*.cpp")
 set_source_files_properties(${SOURCE_FILES} PROPERTIES COMPILE_FLAGS "${PEDANTIC_COMPILE_FLAGS}")
 add_library(cpptemplate ${SOURCE_FILES})
 target_include_directories(cpptemplate PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
-target_link_libraries(cpptemplate ${SYSLIBS})
+target_link_libraries(cpptemplate ${LINKLIBS})
 set_target_properties(cpptemplate PROPERTIES FOLDER libraries)
-list(APPEND SYSLIBS cpptemplate)
 list(APPEND INSTALL_TARGETS cpptemplate)
+list(APPEND LINKLIBS cpptemplate)
 
 # Additional module components: examples, performance benchmarks, tests, tools and install
 if(NOT CPPTEMPLATE_MODULE)
@@ -55,7 +55,7 @@ if(NOT CPPTEMPLATE_MODULE)
     set_source_files_properties(examples/${EXAMPLE_FILE} PROPERTIES COMPILE_FLAGS "${PEDANTIC_COMPILE_FLAGS}")
     add_executable(${EXAMPLE_TARGET} examples/${EXAMPLE_FILE})
     target_include_directories(${EXAMPLE_TARGET} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
-    target_link_libraries(${EXAMPLE_TARGET} cpptemplate ${SYSLIBS})
+    target_link_libraries(${EXAMPLE_TARGET} ${LINKLIBS})
     set_target_properties(${EXAMPLE_TARGET} PROPERTIES FOLDER examples)
     list(APPEND INSTALL_TARGETS ${EXAMPLE_TARGET})
     list(APPEND INSTALL_TARGETS_PDB ${EXAMPLE_TARGET})
@@ -69,7 +69,7 @@ if(NOT CPPTEMPLATE_MODULE)
     set_source_files_properties(performance/${BENCHMARK_FILE} PROPERTIES COMPILE_FLAGS "${PEDANTIC_COMPILE_FLAGS}")
     add_executable(${BENCHMARK_TARGET} performance/${BENCHMARK_FILE})
     target_include_directories(${BENCHMARK_TARGET} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
-    target_link_libraries(${BENCHMARK_TARGET} cpptemplate cppbenchmark ${SYSLIBS})
+    target_link_libraries(${BENCHMARK_TARGET} ${LINKLIBS} cppbenchmark)
     set_target_properties(${BENCHMARK_TARGET} PROPERTIES FOLDER performance)
     list(APPEND INSTALL_TARGETS ${BENCHMARK_TARGET})
     list(APPEND INSTALL_TARGETS_PDB ${BENCHMARK_TARGET})
@@ -80,7 +80,7 @@ if(NOT CPPTEMPLATE_MODULE)
   set_source_files_properties(${TESTS_SOURCE_FILES} PROPERTIES COMPILE_FLAGS "${PEDANTIC_COMPILE_FLAGS}")
   add_executable(cpptemplate-tests ${CATCH} ${TESTS_SOURCE_FILES})
   target_include_directories(cpptemplate-tests PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include" PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/modules/catch/single_include")
-  target_link_libraries(cpptemplate-tests cpptemplate ${SYSLIBS})
+  target_link_libraries(cpptemplate-tests ${LINKLIBS})
   set_target_properties(cpptemplate-tests PROPERTIES FOLDER tests)
   list(APPEND INSTALL_TARGETS cpptemplate-tests)
   list(APPEND INSTALL_TARGETS_PDB cpptemplate-tests)
