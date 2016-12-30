@@ -29,10 +29,12 @@ include(SetPlatformFeatures)
 find_package(Threads REQUIRED)
 
 # System link libraries
-list(APPEND SYSTEM Threads::Threads)
+#list(APPEND SYSLIBS Threads::Threads)
 
 # Modules
 add_subdirectory("modules")
+
+message("${SYSLIBS}")
 
 # Library
 file(GLOB_RECURSE SOURCE_FILES "source/*.cpp")
