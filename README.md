@@ -23,7 +23,7 @@ C++ Template Library contains initial templates for a new C++ library project.
     * [Windows (Visaul Studio 2015)](#windows-visaul-studio-2015)
 
 # Features
-* Cross platform
+* Cross platform (Linux, OSX, Windows)
 * Benchmarks
 * Examples
 * Tests
