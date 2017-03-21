@@ -85,7 +85,7 @@ if(NOT CPPTEMPLATE_MODULE)
 
   # CTest
   enable_testing()
-  add_test(cpptemplate-tests cpptemplate-tests)
+  add_test(cpptemplate-tests cpptemplate-tests --durations yes --order lex)
 
   # Install
   install(TARGETS ${INSTALL_TARGETS}
