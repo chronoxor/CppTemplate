@@ -22,7 +22,7 @@ GitHub: https://github.com/chronoxor/CppTemplate
 
 /*!
     \namespace CppTemplate
-    \brief C++ template project definitions
+    \brief C++ Template project definitions
 */
 namespace CppTemplate {
 
