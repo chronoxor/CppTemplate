@@ -20,7 +20,7 @@ C++ Template Library contains initial templates for a new C++ library project.
     * [Windows (Cygwin)](#windows-cygwin)
     * [Windows (MinGW)](#windows-mingw)
     * [Windows (MinGW with MSYS)](#windows-mingw-with-msys)
-    * [Windows (Visaul Studio)](#windows-visaul-studio)
+    * [Windows (Visual Studio)](#windows-visual-studio)
 
 # Features
 * Cross platform (Linux, OSX, Windows)
@@ -77,7 +77,7 @@ cd build
 mingw.bat
 ```
 
-## Windows (Visaul Studio)
+## Windows (Visual Studio)
 ```
 cd build
 vs.bat
