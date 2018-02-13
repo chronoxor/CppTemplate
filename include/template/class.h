@@ -9,8 +9,6 @@
 #ifndef CPPTEMPLATE_TEMPLATE_CLASS_H
 #define CPPTEMPLATE_TEMPLATE_CLASS_H
 
-#include <exception>
-
 namespace CppTemplate {
 
 //! Template class
