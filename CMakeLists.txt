@@ -28,11 +28,11 @@ include(SetPlatformFeatures)
 # External packages
 find_package(Threads REQUIRED)
 
-# Modules
-add_subdirectory("modules")
-
 # Link libraries
 list(APPEND LINKLIBS Threads::Threads)
+
+# Modules
+add_subdirectory("modules")
 
 # System directories
 include_directories(SYSTEM "${CMAKE_CURRENT_SOURCE_DIR}/modules")
