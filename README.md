@@ -41,6 +41,7 @@ C++ Template Library contains initial templates for a new C++ library project.
 Optional:
 * [Clang](http://clang.llvm.org)
 * [Clion](https://www.jetbrains.com/clion)
+* [Cygwin](https://cygwin.com)
 * [MinGW](http://mingw-w64.org/doku.php)
 * [Visual Studio](https://www.visualstudio.com)
 
