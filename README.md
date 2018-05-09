@@ -8,7 +8,7 @@
 
 C++ Template Library contains initial templates for a new C++ library project.
 
-[CppTemplate API reference](http://chronoxor.github.io/CppTemplate/index.html)
+[CppTemplate API reference](https://chronoxor.github.io/CppTemplate/index.html)
 
 # Contents
   * [Features](#features)
@@ -34,15 +34,15 @@ C++ Template Library contains initial templates for a new C++ library project.
 * Linux
 * OSX
 * Windows 7 / Windows 10
-* [CMake](http://www.cmake.org)
+* [CMake](https://www.cmake.org)
 * [GIT](https://git-scm.com)
 * [GCC](https://gcc.gnu.org)
 
 Optional:
-* [Clang](http://clang.llvm.org)
+* [Clang](https://clang.llvm.org)
 * [Clion](https://www.jetbrains.com/clion)
 * [Cygwin](https://cygwin.com)
-* [MinGW](http://mingw-w64.org/doku.php)
+* [MinGW](https://mingw-w64.org/doku.php)
 * [Visual Studio](https://www.visualstudio.com)
 
 # How to build?
