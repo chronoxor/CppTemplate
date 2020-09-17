@@ -1,6 +1,4 @@
 # CppTemplate todo
-
-General
 - [ ] Library
 - [ ] Examples
 - [ ] Performance
