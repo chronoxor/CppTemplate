@@ -1,0 +1,10 @@
+Python program to reverse a number using recursion
+rev_num = 0
+base = 1
+def reverse_digits(num):  # Function Definitionglobal rev_numglobal baseif(num > 0):
+    reverse_digits((int)(num / 10))
+    rev_num += (num % 10) * base
+    base *= 10return rev_num
+
+num = int(input())
+print("Reversed number is", reverse_digits(num))  # Function call
