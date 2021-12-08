@@ -1,11 +1,14 @@
 # CppTemplate
 
-[![Linux build status](https://img.shields.io/travis/com/chronoxor/CppTemplate/master?label=Linux)](https://travis-ci.com/chronoxor/CppTemplate)
-[![OSX build status](https://img.shields.io/travis/com/chronoxor/CppTemplate/master?label=OSX)](https://travis-ci.com/chronoxor/CppTemplate)
-[![Cygwin build status](https://img.shields.io/appveyor/build/chronoxor/CppTemplate/master?label=Cygwin)](https://ci.appveyor.com/project/chronoxor/CppTemplate)
-[![MSYS2 build status](https://img.shields.io/appveyor/build/chronoxor/CppTemplate/master?label=MSYS2)](https://ci.appveyor.com/project/chronoxor/CppTemplate)
-[![MinGW build status](https://img.shields.io/appveyor/build/chronoxor/CppTemplate/master?label=MinGW)](https://ci.appveyor.com/project/chronoxor/CppTemplate)
-[![Windows build status](https://img.shields.io/appveyor/build/chronoxor/CppTemplate/master?label=Windows)](https://ci.appveyor.com/project/chronoxor/CppTemplate)
+![Linux (clang)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-linux-clang.yml/badge.svg)
+![Linux (gcc)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-linux-gcc.yml/badge.svg)
+<br/>
+![MacOS](https://github.com/chronoxor/CppTemplate/actions/workflows/build-macos.yml/badge.svg)
+<br/>
+![Windows (Cygwin)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-windows-cygwin.yml/badge.svg)
+![Windows (MinGW)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-windows-mingw.yml/badge.svg)
+![Windows (MSYS2)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-windows-msys2.yml/badge.svg)
+![Windows (Visual Studio)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-windows-msvc.yml/badge.svg)
 
 C++ Template Library contains initial templates for a new C++ library project.
 
