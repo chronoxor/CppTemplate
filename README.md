@@ -20,7 +20,7 @@ C++ Template Library contains initial templates for a new C++ library project.
   * [How to build?](#how-to-build)
 
 # Features
-* Cross platform (Linux, OSX, Windows)
+* Cross platform (Linux, MacOS, Windows)
 * Benchmarks
 * Examples
 * Tests
@@ -29,7 +29,7 @@ C++ Template Library contains initial templates for a new C++ library project.
 
 # Requirements
 * Linux (binutils-dev uuid-dev)
-* OSX
+* MacOS
 * Windows 10
 * [cmake](https://www.cmake.org)
 * [gcc](https://gcc.gnu.org)
@@ -65,7 +65,7 @@ cd build
 ./unix.sh
 ```
 
-### OSX
+### MacOS
 ```shell
 cd build
 ./unix.sh
