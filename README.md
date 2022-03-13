@@ -28,9 +28,9 @@ C++ Template Library contains initial templates for a new C++ library project.
 * Continuous integration ([Travis CI](https://travis-ci.com), [AppVeyor](https://www.appveyor.com))
 
 # Requirements
-* Linux (binutils-dev uuid-dev)
+* Linux
 * MacOS
-* Windows 10
+* Windows
 * [cmake](https://www.cmake.org)
 * [gcc](https://gcc.gnu.org)
 * [git](https://git-scm.com)
