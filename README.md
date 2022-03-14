@@ -6,8 +6,8 @@
 [![MacOS](https://github.com/chronoxor/CppTemplate/actions/workflows/build-macos.yml/badge.svg)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-macos.yml)
 <br/>
 [![Windows (Cygwin)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-windows-cygwin.yml/badge.svg)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-windows-cygwin.yml)
-[![Windows (MinGW)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-windows-mingw.yml/badge.svg)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-windows-mingw.yml)
 [![Windows (MSYS2)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-windows-msys2.yml/badge.svg)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-windows-msys2.yml)
+[![Windows (MinGW)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-windows-mingw.yml/badge.svg)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-windows-mingw.yml)
 [![Windows (Visual Studio)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-windows-vs.yml/badge.svg)](https://github.com/chronoxor/CppTemplate/actions/workflows/build-windows-vs.yml)
 
 C++ Template Library contains initial templates for a new C++ library project.
