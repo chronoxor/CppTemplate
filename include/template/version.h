@@ -27,7 +27,7 @@ GitHub: https://github.com/chronoxor/CppTemplate
 namespace CppTemplate {
 
 //! Project version
-const char version[] = "1.0.4.0";
+const char version[] = "1.0.5.0";
 
 } // namespace CppTemplate
 
