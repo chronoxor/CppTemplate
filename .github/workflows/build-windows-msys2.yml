@@ -19,6 +19,10 @@ jobs:
         with:
           msystem: UCRT64
           release: false
+          install: >-
+            git
+            make
+            mingw-w64-ucrt-x86_64-cmake
 
       - name: "Setup cmake"
         run: cmake --version
