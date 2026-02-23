@@ -19,15 +19,6 @@ jobs:
         with:
           msystem: UCRT64
           release: false
-          install: >-
-            git
-            make
-            mingw-w64-ucrt-x86_64-cmake
-            mingw-w64-ucrt-x86_64-gcc
-            mingw-w64-ucrt-x86_64-doxygen
-            mingw-w64-ucrt-x86_64-graphviz
-            msys2-w32api-runtime
-            python-pip
 
       - name: "Setup cmake"
         run: cmake --version
