@@ -27,7 +27,7 @@ C++ Template Library contains initial templates for a new C++ library project.
 * Examples
 * Tests
 * [Doxygen](http://www.doxygen.org) API documentation
-* Continuous integration ([Travis CI](https://travis-ci.com), [AppVeyor](https://www.appveyor.com))
+* Continuous integration ([GitHub Actions](https://github.com/features/actions))
 
 # Requirements
 * Linux
